@@ -16,9 +16,9 @@ Dit document bundelt alle beslissingen en specificaties die zijn uitgewerkt voor
 
 **Status: beslist.**
 
-- **Shopify blijft de backend**: productcatalogus, voorraad, betaalmethoden (Klarna/iDEAL) en de checkout zelf blijven op Shopify draaien.
-- **Lovable bouwt de custom frontend**: header, homepage, collectiepagina's, productpagina's en winkelwagen worden gebouwd in Lovable en praten via Shopify's Storefront API met de backend. Dit is dus geen traditioneel Shopify-thema in Liquid, maar een headless opzet.
-- **Afrekenen (checkout) blijft bij Shopify**: de custom cart/winkelwagenpagina stuurt bij het afrekenen door naar Shopify's eigen hosted checkout, in plaats van dat er een eigen bestelpagina wordt nagebouwd. Toelichting en reden: zie "Bestelpagina (checkout)" onder Winkelwagenpagina.
+- **Shopify-thema in Liquid** (beslist; eerder overwogen headless-opzet met Lovable is vervallen): header, homepage, collectiepagina's, productpagina's en winkelwagen worden gebouwd als Online Store 2.0-thema in de map `theme/` van de repo (Liquid + CSS + vanilla JS). Productcatalogus, voorraad, betaalmethoden (Klarna/iDEAL), Storefront-filtering en zoeken komen rechtstreeks uit Shopify.
+- **Geen Lovable voor de bouw**: Lovable wordt niet gebruikt om de site te maken.
+- **Afrekenen (checkout) blijft bij Shopify**: de winkelwagenpagina en -drawer sturen bij "Afrekenen" door naar Shopify's eigen hosted checkout. Toelichting: zie "Bestelpagina (checkout)" onder Winkelwagenpagina.
 - **ManyChat komt er apart bij** voor marketingautomatisering/berichten (bijv. WhatsApp- of Messenger-herinneringen). Dit is nog geen onderdeel van de paginabouw en wordt pas opgepakt na de kern-layout.
 
 ## Huidige situatie — audit samenvatting
@@ -164,10 +164,10 @@ Onderbalk: nieuwsbrief, social-iconen (met gecorrigeerde link naar goedkopeschoe
 
 **Aanbevolen aanpak: geen eigen bestelpagina bouwen, maar doorsturen naar Shopify's hosted checkout.**
 
-- Shopify Checkout is al PCI-compliant, ondersteunt Klarna/iDEAL/creditcard, en wordt automatisch onderhouden door Shopify — een eigen bestelpagina nabouwen in Lovable is extra werk met extra risico (betaalgegevens, compliance) voor weinig voordeel.
+- Shopify Checkout is al PCI-compliant, ondersteunt Klarna/iDEAL/creditcard, en wordt automatisch onderhouden door Shopify — een eigen bestelpagina nabouwen is extra werk met extra risico (betaalgegevens, compliance) voor weinig voordeel.
 - Op lagere Shopify-abonnementen mag de checkout bovendien niet volledig vervangen worden door een eigen pagina; alleen Shopify Plus biedt volledige checkout-extensibility (eigen secties/stappen in de checkout zelf).
-- De klantreis wordt dus: winkelwagenpagina (eigen ontwerp, in Lovable) → knop "Afrekenen" → Shopify's hosted checkout (betaling + bevestiging) → terug naar een eigen "Bedankt voor je bestelling"-pagina indien gewenst, of Shopify's standaard bevestigingspagina.
-- Wat we wel zelf kunnen vormgeven: de kleuren, het logo en de typografie van de Shopify-checkout zelf, via de Checkout branding-instellingen in het Shopify-admin — zo voelt de checkout nog steeds als onderdeel van de site, ook al is hij niet in Lovable gebouwd.
+- De klantreis wordt dus: winkelwagenpagina (eigen ontwerp, in het thema) → knop "Afrekenen" → Shopify's hosted checkout (betaling + bevestiging) → terug naar een eigen "Bedankt voor je bestelling"-pagina indien gewenst, of Shopify's standaard bevestigingspagina.
+- Wat we wel zelf kunnen vormgeven: de kleuren, het logo en de typografie van de Shopify-checkout zelf, via de Checkout branding-instellingen in het Shopify-admin — zo voelt de checkout nog steeds als onderdeel van de site, ook al maakt hij geen deel uit van het thema.
 - Welk Shopify-abonnement gebruikt wordt, bepaalt hoe ver deze branding kan gaan: goedkopeschoenen.nl gebruikt het bestaande Shopify-account/abonnement waar de huidige site al op draait — geen wijziging nodig.
 
 ## Animaties en interactie
