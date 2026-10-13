@@ -370,7 +370,22 @@ Geverifieerd op een echte productpagina: `/products/trendy-laarzen-met-slouchy-d
 - Bestaande sterke punten om te behouden: winkelwagen-drawer met gratis-verzendingbalk en
   cross-sell met variantkeuze, Sale-collectie badge/van-voor-prijs-patroon (als basis voor het
   patroon dat nu overal wordt doorgevoerd)
-- **Lovable** (indien gebruikt als bouwtool): heeft een **native Shopify-connector** (seamless
-  integratie, direct te koppelen aan de productcatalogus). **ManyChat heeft geen native
-  connector** in Lovable — moet via een los JS-widget-snippet (standaard ManyChat-embed) of via
-  de publieke ManyChat API worden gekoppeld, los van Lovable's eigen integraties
+- **Bouwmethode (beslist)**: Shopify-thema in Liquid + CSS + JS, in de map `theme/` (Online Store 2.0).
+  Geen headless opzet en **niet bouwen met Lovable**.
+- **ManyChat** heeft geen eigen thema-integratie: koppelen via het standaard ManyChat-embedsnippet in
+  `layout/theme.liquid` of via de publieke ManyChat API (pas na de kern-layout).
+- Checkout blijft Shopify's hosted checkout; branding via Checkout-instellingen in het Shopify-admin.
+
+## 11. Bouwstatus van het thema (`theme/`)
+
+**Gebouwd:** design tokens, topbalk, sticky header met mega-menu (desktop) en accordion (mobiel), live
+zoeksuggesties, hero met 3D-tilt, USP-balk, assortiment-tegels, productgrid, reviews, nieuwsbrief,
+footer, productpagina (galerij met tilt, varianten, uitklapbare secties, reviews, gerelateerde producten),
+collectiepagina met filters, winkelwagen-drawer + -pagina met verzendbalk en cross-sell,
+scroll-reveal en entrance-animaties.
+
+**Nog te bouwen uit deze specificatie:** logo-hover (balken schuiven uiteen), tellende statistieken
+(4.5), donkere statement-sectie, categorie-swipe-rail en snap-swipe-rijen op mobiel (4.7), sale-badge-pulse,
+animerende nav-underline, maattabel/maatadvies-pagina, wishlist, breadcrumbs, skeleton-states,
+cookie-banner, "Vaak samen gekocht" beperkt tot dezelfde Productsoort (nu Shopify-aanbevelingen),
+mega-menu-indeling op basis van de 18 catalogus-categorieën, AI-functies (slimme zoek, beschrijvingen).
