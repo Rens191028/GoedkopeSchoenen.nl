@@ -118,7 +118,70 @@ Een eerste visueel ontwerp is uitgewerkt (zie het Design-artifact in het project
 - Productgrid: 4 → 2 kolommen onder 860px → 1 kolom onder 560px
 - Trust-sectie: 2 kolommen → 1 kolom onder 860px
 
-## 6. Nog openstaand / vervolgstappen
+## 6. Productpagina — huidige situatie (live site)
+
+Geverifieerd op een echte productpagina: `/products/trendy-laarzen-met-slouchy-design-bruin`
+(Trendy laarzen met slouchy design bruin, €39,99). Dit is de basis voor de nieuwe productpagina.
+
+### Huidige opbouw
+1. **Trustbalk boven**: Kiyoh-widget, "Op werkdagen voor 15:00 besteld: zelfde dag verzonden",
+   "Achteraf betalen", bekendheid via beurzen/tijdschriften, gratis verzending vanaf €65
+2. **Navigatie**: hoofdmenu (Goedkope Schoenen / Goedkope Tassen / Goedkope accessoires / Sale)
+   met subcategorieën, promo-links ("Pantoffels 2 voor €24,99", "Boots festival 2 paar €50"),
+   Contact/Retourportaal/Cadeaubon, social links (Facebook/Instagram/TikTok), skiplink
+   "Meteen naar de content"
+3. **Productgalerij**: 3 foto's, teller "1 / van 3", vergroot-knop "Media openen in modaal"
+4. **Productkop en prijs**: titel, SKU (kleur+maatcode), prijsblok met labels "Normale prijs" /
+   "Aanbiedingsprijs", btw-vermelding, "Aanbieding"-label, "Uitverkocht"-status
+5. **Variantkeuzes**: kleur (bij dit product 1 optie), maatknoppen 36–41, elk met verborgen tekst
+   "Variant uitverkocht of niet beschikbaar" voor toegankelijkheid
+6. **Aankoopblok**: hoeveelheidsveld "Aantal (0 in winkelwagen)" met +/− knoppen, CTA
+   "Aan winkelwagen toevoegen"
+7. **Verzend-/servicekaarten**: levertermijn, PostNL + afhaalpunt-optie, verzendkosten
+   (gratis vanaf €65, anders €5,99; sommige tassen €4,45), retourportaal-link, betaalmethoden
+   (iDeal, Klarna, creditcard, Bancontact)
+8. **Beschrijving en specificaties**: marketingtekst + concrete maten (bijv. "totale hoogte 28 cm
+   incl. hak van 7 cm, schachtwijdte 40 cm bij maat 39")
+9. **Delen**: "Link kopiëren", link "Alle details bekijken"
+10. **Reviews en cross-sell**: Kiyoh-slider zonder zichtbare reviewteksten; **geen** gerelateerde
+    producten of "Vaak samen gekocht"-sectie
+11. **Footer**: klantenservicelinks, nieuwsbrief ("10% korting op je eerste aankoop"), landkeuze
+    (BE/DE/NL, EUR), beleidspagina's
+
+### Wat behouden moet blijven
+- Verzend-/retour-/betaalkaarten direct naast de aankoopknop (PostNL, iDeal/Klarna/creditcard/
+  Bancontact) — functioneel sterk
+- Maatkeuze als knoppen met duidelijke uitverkocht-status per variant
+- Concrete specificaties (hoogte, hakhoogte, schachtwijdte) — relevant voor een schoenenwebshop
+- Deel-functie
+
+### Wat moet verbeteren in het nieuwe ontwerp
+- **Prijsblok**: toont nu altijd zowel "Normale prijs" als "Aanbiedingsprijs", ook als beide
+  hetzelfde bedrag zijn (geen echte korting) — verwarrend. Nieuw: toon alleen een
+  doorgestreepte van-prijs wanneer er daadwerkelijk korting is
+- **Reviews ontbreken inhoudelijk**: alleen een lege Kiyoh-slider, geen reviewteksten zichtbaar
+  op de productpagina zelf — mist het vertrouwenssignaal dat elders (9,3 Kiyoh-score) sterk is.
+  Nieuw: zichtbare reviewcitaten met naam en sterrenscore, zoals in de vertrouwenssectie op de
+  homepage
+- **Geen cross-sell/upsell**: geen "Vaak samen gekocht" of gerelateerde producten, terwijl de
+  winkelwagen-drawer dit patroon elders al goed doet (cross-sell met kleur-/maatkeuze direct
+  toevoegbaar). Nieuw: "Vaak samen gekocht" of "Dit vind je misschien ook leuk"-sectie onderaan
+- **Tegenstrijdige levertijd-copy**: bovenbalk zegt "zelfde dag verzonden", servicekaart zegt
+  "morgen in huis" — op elkaar afstemmen tot één consistente belofte
+- **Geen zoom/360°-weergave** van het product — i.c.m. de besproken 3D-tilt/rotatie-interactie
+  een kans om het product beter te laten zien dan nu
+
+### Richting voor het nieuwe ontwerp
+- Groot productbeeld met 3D-tilt/rotatie-interactie bij hover (zie sectie 4, 3D-elementen)
+- Strak info-paneel ernaast: titel, prijs (met correcte van-voor-logica), maatknoppen, CTA
+- Verzend-/retour-/betaalkaarten behouden, visueel in de nieuwe huisstijl
+- Uitklapbare secties voor Beschrijving / Specificaties / Verzending & retour (i.p.v. alles
+  los onder elkaar)
+- Zichtbare reviewsectie met echte citaten (niet alleen een widget)
+- "Vaak samen gekocht" / gerelateerde producten-sectie onderaan, voor de footer
+- Consistente levertijd-copy door de hele pagina (en bij voorkeur site-breed)
+
+## 7. Nog openstaand / vervolgstappen
 
 Uit het oorspronkelijke verbeterplan, nog niet uitgewerkt in ontwerp:
 
@@ -131,7 +194,7 @@ Uit het oorspronkelijke verbeterplan, nog niet uitgewerkt in ontwerp:
 - **Social media-links corrigeren** (Facebook verwees naar oude merknaam "mijnschoenenshop.nl")
 - **Accessoires-tegel** toevoegen aan de Assortiment-sectie op de homepage
 
-## 7. Technische context
+## 8. Technische context
 
 - Huidige site draait op **Shopify** — implementatie van het nieuwe ontwerp gebeurt dus in een
   Shopify-thema (Liquid + CSS + JS), niet als losstaande webapp
