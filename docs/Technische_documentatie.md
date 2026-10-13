@@ -1,4 +1,4 @@
-# Technische documentatie GoedkopeSchoenen.nl (voor Claude Code)
+# Technische documentatie GoedkopeSchoenen.com (voor Claude Code)
 
 Oct 13, 2026 · @rens
 
@@ -6,7 +6,7 @@ Oct 13, 2026 · @rens
 
 Dit document bundelt alle beslissingen en specificaties die zijn uitgewerkt voor de volledige vernieuwing van goedkopeschoenen.com, als directe build-brief voor Claude Code. Het is bedoeld om zonder verdere toelichting mee te kunnen bouwen aan het Shopify-thema.
 
-**Winkel:** Shopify-webshop, 750 producten (schoenen, tassen, accessoires), gericht op dames, prijsklasse €13,99–€90, Kiyoh-score 9,3 op 6.500+ beoordelingen.
+**Winkel:** Shopify-webshop, 750 producten (schoenen, tassen, accessoires), gericht op dames, prijsklasse €8,99–€90, Kiyoh-score 9,3 op 6.531 beoordelingen.
 
 **Verhouding tot eerder werk:** de audit en het analysewerk staan uitgebreid in het document "Verbeterplan GoedkopeSchoenen.com" ([link](https://claude.ai/code/artifact/57075957-870b-4617-877a-1a20a054c6f5)). Dit document neemt de kernbevindingen en alle inmiddels goedgekeurde richtingen over in een vorm die direct bruikbaar is om te bouwen — per onderdeel (header, homepage, footer, productpagina, collectiepagina, winkelwagenpagina), inclusief merkidentiteit en animatieprincipes.
 
@@ -16,7 +16,7 @@ Dit document bundelt alle beslissingen en specificaties die zijn uitgewerkt voor
 
 **Wat al goed werkt** (behouden/uitbouwen):
 
-- Kiyoh-score 9,3 op 6.500+ reviews, zichtbaar met recente beoordelingen
+- Kiyoh-score 9,3 op 6.531 reviews, zichtbaar met recente beoordelingen
 - Duidelijke USP-balk (same-day verzending, Klarna achteraf betalen, gratis verzending vanaf €65)
 - Overzichtelijke hoofdnavigatie (Schoenen / Tassen / Accessoires / Sale)
 - Winkelwagen-drawer met voortgangsbalk gratis verzending en cross-sell met kleur-/maatkeuze
@@ -96,7 +96,7 @@ Referentie: Adidas (strak, grijs/zwart met één doordachte accentkleur, maar to
 **Status: goedgekeurd, klaar om te bouwen.**
 
 - Rustige hero met kop + CTA-knop (geen drukke fotocollage); zelfde lettertype-familie als het header-logo
-- Korte, concrete kop met winkelbelofte (bijv. "vanaf €13,99" of de 9,3 Kiyoh-score direct in beeld als sociaal bewijs)
+- Korte, concrete kop met winkelbelofte (bijv. "vanaf €8,99" of de 9,3 Kiyoh-score direct in beeld als sociaal bewijs)
 - Één duidelijke CTA ("Shop nu" / "Bekijk de sale") naar de best lopende collectie
 - Eventueel: kleine geroteerde selectie actuele acties i.p.v. statische collage, aansluitend op de topbalk
 - Assortiment-sectie uitgebreid naar 3 tegels: Schoenen / Tassen / Accessoires (nu ontbreekt Accessoires)
@@ -112,7 +112,7 @@ Referentie: Adidas (strak, grijs/zwart met één doordachte accentkleur, maar to
 
 4 kolommen:
 
-1. Merk + Kiyoh-score (9,3 / 6.500+ reviews)
+1. Merk + Kiyoh-score (9,3 / 6.531 reviews)
 2. Klantenservice, inclusief retourportaal
 3. Shop-snelkoppelingen
 4. Over ons / contactgegevens incl. KvK- en btw-nummer, adres
