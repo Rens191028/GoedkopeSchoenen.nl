@@ -243,6 +243,6 @@ Elke stap kan los opgeleverd en beoordeeld worden voordat de volgende begint.
 ## Openstaande beslissingen
 
 - [x] **Shopify-account**: opgelost — goedkopeschoenen.nl heeft al een bestaand Shopify-account waar de huidige site op draait; dat account/abonnement blijft gewoon in gebruik, geen wijziging nodig. Checkout-branding (logo/kleuren) gaat zo ver als dat bestaande abonnement toelaat.
-- [x] **Logo-uitvoering**: opgelost — gekozen is "Richting D — Tempo" (drie gekantelde stroken, zie Merkidentiteit > Logo hierboven). Nog wel te doen: dit icoon definitief als los SVG/favicon-asset exporteren voor header, footer en favicon.
+- [x] **Logo-uitvoering**: opgelost — gekozen is "Richting D — Tempo" (drie gekantelde stroken, zie Merkidentiteit > Logo hierboven). Definitieve bestanden staan in `design/logo/` (icoon-PNG, volledig logo-WebP, icoon-SVG) en in `theme/assets/` (header, footer, favicon).
 - [ ] **Stijlbord/mockup**: eerder aangegeven dat dit pas na de huisstijl-uitwerking zou komen — nog te bepalen of dit nu nog gemaakt wordt of dat er direct wordt doorgebouwd op basis van dit document
 - [ ] **ManyChat-scope**: welke flows (bijv. orderupdates, verlaten-winkelwagen-herinneringen, klantenservice) ManyChat moet afhandelen is nog niet bepaald — pas op te pakken na de kern-layout
