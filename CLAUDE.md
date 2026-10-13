@@ -6,8 +6,8 @@ Plaats dit bestand als `CLAUDE.md` in de root van het project.
 
 ## 1. Project in het kort
 
-- **Winkel**: Shopify-webshop, ±499 producten in de hoofdcollectie
-- **Doelgroep**: vooral dames; schoenen, tassen en accessoires, prijsklasse €15–€90
+- **Winkel**: Shopify-webshop, 750 producten (de hoofdcollectie "Alle Goedkope Schoenen" bevat er 499)
+- **Doelgroep**: vooral dames; schoenen, tassen en accessoires, prijsklasse €8,99–€90
 - **Positionering**: toegankelijk en vriendelijk, maar met een premium uitstraling
 - **Referentiemerk**: Adidas — strak, grijs/zwart, met één doordachte accentkleur
 - **Scope van dit traject**: volledige vernieuwing — huisstijl, logo, homepage, navigatie,
