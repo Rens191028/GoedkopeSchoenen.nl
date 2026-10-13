@@ -21,7 +21,7 @@ Hoofdmenu `main-menu`: Schoenen → kolomtitel (Sneakers, Laarzen & boots, Insta
 ## Nog te doen
 - Echte productfoto in de hero en foto's in de assortiment-tegels uploaden (thema-editor)
 - Echte Kiyoh-citaten + namen invullen (placeholders in de review-blokken)
-- Definitief logo (nu de "speed stripes"-SVG in `snippets/logo-icon.liquid`) en favicon-PNG
+- Favicon: SVG staat klaar (`assets/favicon.svg`); optioneel een PNG uploaden via Thema-instellingen
 - Kleurfilter: waarden worden getoond met hoofdletter, maar dubbele tags ("Bruin"/"bruin") moeten in Shopify zelf worden samengevoegd
 - Datahygiëne kinderschoenen-collectie en social-links (shop-data, geen themacode)
 - Shopify `theme check` + test op een development store (nog niet uitgevoerd; CLI niet beschikbaar in deze omgeving)

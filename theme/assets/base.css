@@ -231,3 +231,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   .newsletter-form { flex-direction: column; }
 }
 @media (max-width: 560px) { .product-grid { gap: 12px; } .footer-grid { grid-template-columns: 1fr; } .buy-row { flex-wrap: wrap; } .search-form { flex-direction: column; } }
+
+/* Logo-hover: balken schuiven licht uiteen */
+.logo-icon .bar { transition: transform 260ms var(--ease); }
+.logo:hover .bar-1 { transform: translate(8px, -14px); } .logo:hover .bar-3 { transform: translate(-8px, 14px); }
